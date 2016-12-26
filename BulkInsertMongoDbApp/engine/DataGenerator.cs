@@ -430,7 +430,7 @@ namespace BulkInsertMongoDbApp.Engine
 
             cuisineType = new CuisineType()
             {
-                Name = "Burger joint",
+                Name = "Juice Bar",
                 Active = true,
                 Order = cnt++,
                 DateCreated = DateTime.Now
@@ -439,7 +439,7 @@ namespace BulkInsertMongoDbApp.Engine
 
             cuisineType = new CuisineType()
             {
-                Name = "Fast food",
+                Name = "Healthy Eatery",
                 Active = true,
                 Order = cnt++,
                 DateCreated = DateTime.Now
@@ -448,7 +448,7 @@ namespace BulkInsertMongoDbApp.Engine
 
             cuisineType = new CuisineType()
             {
-                Name = "Italian",
+                Name = "British",
                 Active = true,
                 Order = cnt++,
                 DateCreated = DateTime.Now
@@ -457,34 +457,7 @@ namespace BulkInsertMongoDbApp.Engine
 
             cuisineType = new CuisineType()
             {
-                Name = "Indian",
-                Active = true,
-                Order = cnt++,
-                DateCreated = DateTime.Now
-            };
-            list.Add(cuisineType);
-
-            cuisineType = new CuisineType()
-            {
-                Name = "Thai",
-                Active = true,
-                Order = cnt++,
-                DateCreated = DateTime.Now
-            };
-            list.Add(cuisineType);
-
-            cuisineType = new CuisineType()
-            {
-                Name = "Sushi",
-                Active = true,
-                Order = cnt++,
-                DateCreated = DateTime.Now
-            };
-            list.Add(cuisineType);
-
-            cuisineType = new CuisineType()
-            {
-                Name = "Mexican",
+                Name = "Caribbean",
                 Active = true,
                 Order = cnt++,
                 DateCreated = DateTime.Now
@@ -502,7 +475,7 @@ namespace BulkInsertMongoDbApp.Engine
 
             cuisineType = new CuisineType()
             {
-                Name = "Soul food",
+                Name = "Desserts",
                 Active = true,
                 Order = cnt++,
                 DateCreated = DateTime.Now
@@ -511,7 +484,65 @@ namespace BulkInsertMongoDbApp.Engine
 
             cuisineType = new CuisineType()
             {
-                Name = "Serbian",
+                Name = "European",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+            list.Add(cuisineType);
+
+            cuisineType = new CuisineType()
+            {
+                Name = "Indian",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+            list.Add(cuisineType);
+
+            cuisineType = new CuisineType()
+            {
+                Name = "Italian",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+            list.Add(cuisineType);
+
+            cuisineType = new CuisineType()
+            {
+                Name = "Japanese",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+
+            cuisineType = new CuisineType()
+            {
+                Name = "Mexican",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+
+            cuisineType = new CuisineType()
+            {
+                Name = "Middle Eastern",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+
+            cuisineType = new CuisineType()
+            {
+                Name = "Sandwiches & Salads",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+            cuisineType = new CuisineType()
+            {
+                Name = "Vietnamese",
                 Active = true,
                 Order = cnt++,
                 DateCreated = DateTime.Now
