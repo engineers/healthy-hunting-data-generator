@@ -15,7 +15,8 @@ namespace BulkInsertMongoDbApp.Engine
     {
         public static bool InsertGeneratedData(RichTextBox richTextBox, int numOfUsers, int numOfRestaurant, int maxNumOfMealsPerRestaurant, int numOfSearchAnalyticsData)
         {
-            MongoUrl url = new MongoUrl("mongodb://54.245.3.64:27017");
+            //MongoUrl url = new MongoUrl("mongodb://localhost:27017");
+            MongoUrl url = new MongoUrl("mongodb://localhost:27017");
             MongoClient client = new MongoClient(url);
             //MongoClient client = new MongoClient();
             var db = client.GetDatabase("healthyhuntingdb");
@@ -561,7 +562,7 @@ namespace BulkInsertMongoDbApp.Engine
 
             macro = new Macro()
             {
-                Name = "High in protein",
+                Name = "High in protein 8g",
                 Active = true,
                 Order = cnt++,
                 DateCreated = DateTime.Now
@@ -570,7 +571,43 @@ namespace BulkInsertMongoDbApp.Engine
 
             macro = new Macro()
             {
-                Name = "Calorie Conscious",
+                Name = "High in protein 18g",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+            list.Add(macro);
+
+            macro = new Macro()
+            {
+                Name = "High in protein 25g",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+            list.Add(macro);
+
+            macro = new Macro()
+            {
+                Name = "Calorie Conscious 200g",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+            list.Add(macro);
+
+            macro = new Macro()
+            {
+                Name = "Calorie Conscious 350g",
+                Active = true,
+                Order = cnt++,
+                DateCreated = DateTime.Now
+            };
+            list.Add(macro);
+
+            macro = new Macro()
+            {
+                Name = "Calorie Conscious 500g",
                 Active = true,
                 Order = cnt++,
                 DateCreated = DateTime.Now
@@ -615,7 +652,7 @@ namespace BulkInsertMongoDbApp.Engine
 
             macro = new Macro()
             {
-                Name = "Good for my gut",
+                Name = "Plant Based",
                 Active = true,
                 Order = cnt++,
                 DateCreated = DateTime.Now

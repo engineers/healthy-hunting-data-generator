@@ -25,7 +25,7 @@ namespace BulkInsertMongoDbApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //MongoUrl url = new MongoUrl("mongodb://54.245.3.64:27017");
+            //MongoUrl url = new MongoUrl("mongodb://localhost:27017");
             //MongoClient client = new MongoClient(url);
             //var db = client.GetDatabase("healthyhuntingdb");
             //var collection = db.GetCollection<FoodIntolerance>("foodintolerance");
@@ -41,9 +41,10 @@ namespace BulkInsertMongoDbApp
             //    DateCreated = DateTime.UtcNow
             //});
 
-            //MongoUrl url = new MongoUrl("mongodb://54.245.3.64:27017");
-            //MongoClient client = new MongoClient(url);
-            MongoClient client = new MongoClient();
+            //MongoUrl url = new MongoUrl("mongodb://localhost:27017");
+            MongoUrl url = new MongoUrl("mongodb://localhost:27017");
+            MongoClient client = new MongoClient(url);
+            //MongoClient client = new MongoClient();
             var db = client.GetDatabase("healthyhuntingdb");
 
             var diary = db.GetCollection<Diary>("diary");
@@ -120,7 +121,7 @@ namespace BulkInsertMongoDbApp
 
         private void btnDeleteDataBase_Click(object sender, EventArgs e)
         {
-            MongoUrl url = new MongoUrl("mongodb://54.245.3.64:27017");
+            MongoUrl url = new MongoUrl("mongodb://localhost:27017");
             MongoClient client = new MongoClient(url);
             //MongoClient client = new MongoClient();
             var db = client.GetDatabase("healthyhuntingdb");
